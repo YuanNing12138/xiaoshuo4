@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="crowd06-common-resver:war">
+    <output-path>$PROJECT_DIR$/crowd06-common-resver/target</output-path>
+    <root id="archive" name="crowd06-common-resver.war">
+      <element id="artifact" artifact-name="crowd06-common-resver:war exploded" />
+    </root>
+  </artifact>
+</component>

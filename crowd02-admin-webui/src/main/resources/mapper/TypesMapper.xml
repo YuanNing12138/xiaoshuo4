@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.crowd.mapper.TypesMapper">
+
+
+
+
+    <select id="getOneTypes" parameterType="java.lang.Integer" resultType="Types">
+        SELECT  * from  types where id=#{id}
+    </select>
+
+
+    <select id="getTypeByName" parameterType="java.lang.String" resultType="Types">
+        SELECT * FROM types
+        <where>
+            <if test="typename!=null and typename!=''">
+                typename LIKE #{typename}
+            </if>
+        </where>
+    </select>
+    <!--  Integer  saveEntry(@Param("entry") Entry entry);-->
+    <insert id="saveTypes" parameterType="Types">
+        INSERT INTO types
+        (id,typename)
+        VALUE(#{types.id},#{types.typename})
+
+    </insert>
+
+    <!--  Integer delEntry(@Param("id") int id);-->
+    <delete id="delTypes" parameterType="java.lang.Integer">
+        delete  from types where id=#{id}
+    </delete>
+
+    <!--  Integer  updateEntry(@Param("entry") Entry entry);-->
+    <!--categoryid,title,summary,uploaduser,createdate-->
+    <update id="updateTypes"  parameterType="Types">
+        update types
+        <set>
+
+            <if test="types.id!=null &amp;&amp;types.id!=''">id=#{types.id},</if>
+            <if test="types.typename!=null &amp;&amp;types.typename!=''">typename=#{types.typename},</if>
+
+        </set>
+        <where>
+            <if test="types.id!=null">
+                id=#{types.id}
+            </if>
+        </where>
+    </update>
+</mapper>

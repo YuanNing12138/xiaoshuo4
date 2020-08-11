@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/crowd02-admin-webui" />
+    <file type="web" url="file://$PROJECT_DIR$/crowd03-admin-component" />
+    <file type="web" url="file://$PROJECT_DIR$/crowd04-admin-entity" />
+    <file type="web" url="file://$PROJECT_DIR$/crowd05-common-util" />
+    <file type="web" url="file://$PROJECT_DIR$/crowd06-common-resver" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/crowd05-common-util/pom.xml" />
+        <option value="$PROJECT_DIR$/crowd01-admin-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/crowd06-common-resver/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="crowd04-admin-entity:war">
+    <output-path>$PROJECT_DIR$/crowd04-admin-entity/target</output-path>
+    <root id="archive" name="crowd04-admin-entity.war">
+      <element id="artifact" artifact-name="crowd04-admin-entity:war exploded" />
+    </root>
+  </artifact>
+</component>
